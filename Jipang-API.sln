@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jipang-api", "jipang-api\jipang-api.csproj", "{78F614C2-E010-4DC8-8063-44B9FB9C2DB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jipang.Infrastructure", "jipang.Infrastructure\jipang.Infrastructure.csproj", "{4F2A0F57-5EC3-4A20-A0A9-54F5F7B4B765}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jipang.Domain", "jipang.domain\jipang.Domain.csproj", "{0B177536-74E4-43F8-9611-A5464CA62A19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jipang.Application", "jipang.Application\jipang.Application.csproj", "{A7AB823C-A068-49D3-BDBF-45542B5844F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78F614C2-E010-4DC8-8063-44B9FB9C2DB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78F614C2-E010-4DC8-8063-44B9FB9C2DB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78F614C2-E010-4DC8-8063-44B9FB9C2DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78F614C2-E010-4DC8-8063-44B9FB9C2DB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F2A0F57-5EC3-4A20-A0A9-54F5F7B4B765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F2A0F57-5EC3-4A20-A0A9-54F5F7B4B765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F2A0F57-5EC3-4A20-A0A9-54F5F7B4B765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F2A0F57-5EC3-4A20-A0A9-54F5F7B4B765}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B177536-74E4-43F8-9611-A5464CA62A19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B177536-74E4-43F8-9611-A5464CA62A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B177536-74E4-43F8-9611-A5464CA62A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B177536-74E4-43F8-9611-A5464CA62A19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7AB823C-A068-49D3-BDBF-45542B5844F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7AB823C-A068-49D3-BDBF-45542B5844F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7AB823C-A068-49D3-BDBF-45542B5844F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7AB823C-A068-49D3-BDBF-45542B5844F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91520917-FD16-4B81-8D50-8E517507CC1E}
+	EndGlobalSection
+EndGlobal
