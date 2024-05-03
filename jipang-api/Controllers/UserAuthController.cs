@@ -37,7 +37,7 @@ namespace jipang_api.Controllers
         [HttpPost("Logout")]
         public async Task<IActionResult> Logout(UserAuthDtoIn userAuthDtoIn)
         {
-            var userDto = await _userAuthService.LoginUser(userAuthDtoIn.Username, userAuthDtoIn.Password);
+            var userDto = await _userAuthService.LogoutUser(userAuthDtoIn.Username);
 
             if (userDto != null)
             {

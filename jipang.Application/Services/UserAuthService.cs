@@ -2,6 +2,7 @@
 using jipang.Application.DTOs.IN;
 using jipang.Application.DTOs.OUT;
 using jipang.Application.Interfaces;
+using jipang.Domain.Entities;
 using jipang.Infrastructure.Data;
 using jipang.Infrastructure.Interfaces;
 using System;
@@ -43,14 +44,32 @@ namespace jipang.Application.Services
 
                     if (user == null)
                     {
-                        return new UserDtoOut();
+                        return new UserDtoOut
+                        {
+                            Id = 0,
+                            FirstName = "",
+                            LastName = "",
+                            Username = "",
+                            RoleId = 0,
+                            Token = "",
+                            Message = "User not found."
+                        };
                     }
 
                     var HashedPassword = _passwordHashService.HashPassword(password, user.Salt, iterations, salt);
 
                     if (user.Hash != HashedPassword)
                     {
-                        return new UserDtoOut();
+                        return new UserDtoOut
+                        {
+                            Id = 0,
+                            FirstName = "",
+                            LastName = "",
+                            Username = "",
+                            RoleId = 0,
+                            Token = "",
+                            Message = "Incorrect username/password."
+                        };
                     }
 
                     var userDto = _mapper.Map<UserDtoIn>(user);
@@ -68,7 +87,16 @@ namespace jipang.Application.Services
                 }
                 else
                 {
-                    return new UserDtoOut();
+                    return new UserDtoOut
+                    {
+                        Id = 0,
+                        FirstName = "",
+                        LastName = "",
+                        Username = "",
+                        RoleId = 0,
+                        Token = "",
+                        Message = "Incorrect username/password."
+                    };
                 }
 
             }
